@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RainSmart | Smart Water Management</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="#" class="logo">Rain<span>Smart.</span></a>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#calculator">Calculator</a>
+            <a href="#benefits">Benefits</a>
+        </nav>
+
+        <a href="#calculator" class="nav-button">Get Started ↗</a>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <span class="tag">SMART WATER MANAGEMENT</span>
+
+                <h1>Every drop today.<br>
+                    <span>A better tomorrow.</span>
+                </h1>
+
+                <p>
+                    Discover how much rainwater you can collect
+                    and take a smarter step towards water conservation.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#calculator" class="primary-button">
+                        Calculate Rainwater →
+                    </a>
+                    <a href="#benefits" class="secondary-button">
+                        Explore Benefits
+                    </a>
+                </div>
+
+                <div class="hero-note">
+                    <span class="live-dot"></span>
+                    Simple. Sustainable. Smart.
+                </div>
+            </div>
+
+            <div class="hero-card">
+                <div class="rain-icon">☂</div>
+                <p class="small-label">YOUR WATER, YOUR FUTURE</p>
+                <h2>Save water.<br>Save tomorrow.</h2>
+                <p class="hero-card-text">
+                    Small changes can make a meaningful difference.
+                </p>
+
+                <div class="mini-stats">
+                    <div>
+                        <strong>80%</strong>
+                        <span>Assumed efficiency</span>
+                    </div>
+                    <div>
+                        <strong>1 L</strong>
+                        <span>Per mm per m²</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="intro">
+            <span class="tag">YOUR WATER DASHBOARD</span>
+            <h2>Make rain work for you.</h2>
+            <p>Estimate, plan, and manage your rainwater in one place.</p>
+        </section>
+
+        <section class="dashboard">
+            <article class="stat-card">
+                <div class="stat-top">
+                    <span>Rainwater Potential</span>
+                    <span class="stat-icon">↗</span>
+                </div>
+                <h3 id="water-stat">0 L</h3>
+                <p>Estimated collection from your last calculation</p>
+            </article>
+
+            <article class="stat-card">
+                <div class="stat-top">
+                    <span>Roof Area</span>
+                    <span class="stat-icon">⌂</span>
+                </div>
+                <h3 id="roof-stat">— m²</h3>
+                <p>Area entered in the calculator</p>
+            </article>
+
+            <article class="stat-card">
+                <div class="stat-top">
+                    <span>Rainfall</span>
+                    <span class="stat-icon">↓</span>
+                </div>
+                <h3 id="rain-stat">— mm</h3>
+                <p>Rainfall entered in the calculator</p>
+            </article>
+        </section>
+
+        <section class="calculator-section" id="calculator">
+            <div class="section-title">
+                <span class="tag">RAINWATER CALCULATOR</span>
+                <h2>Calculate your potential.</h2>
+                <p>Enter your roof area and rainfall to get an estimate.</p>
+            </div>
+
+            <div class="calculator">
+                <form id="rain-form">
+                    <div class="form-group">
+                        <label for="roof">Roof area</label>
+                        <div class="input-wrap">
+                            <input id="roof" type="number" min="0.01"
+                                step="any" placeholder="e.g. 100" required>
+                            <span>m²</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="rainfall">Rainfall</label>
+                        <div class="input-wrap">
+                            <input id="rainfall" type="number" min="0"
+                                step="any" placeholder="e.g. 50" required>
+                            <span>mm</span>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="primary-button calculate-btn">
+                        Calculate Water →
+                    </button>
+                </form>
+
+                <div class="result-panel" aria-live="polite">
+                    <span class="result-label">YOUR ESTIMATED COLLECTION</span>
+                    <h3 id="result">0 <small>litres</small></h3>
+                    <p id="result-note">
+                        Your estimated result will appear here.
+                    </p>
+                </div>
+            </div>
+
+            <p class="formula-note">
+                Formula: Roof area × Rainfall × 0.8 collection efficiency.
+                This is an estimate, not a guaranteed amount.
+            </p>
+        </section>
+
+        <section class="benefits" id="benefits">
+            <div class="section-title">
+                <span class="tag">WHY RAINS­MART?</span>
+                <h2>A smarter way to save water.</h2>
+                <p>Start with simple information and make informed choices.</p>
+            </div>
+
+            <div class="benefit-grid">
+                <article class="benefit-card">
+                    <div class="benefit-icon">01</div>
+                    <h3>Understand Your Rain</h3>
+                    <p>Estimate the rainwater your roof could collect during rainfall.</p>
+                </article>
+
+                <article class="benefit-card">
+                    <div class="benefit-icon">02</div>
+                    <h3>Plan Your Resources</h3>
+                    <p>Use your estimate to think about storage and everyday water needs.</p>
+                </article>
+
+                <article class="benefit-card">
+                    <div class="benefit-icon">03</div>
+                    <h3>Build Better Habits</h3>
+                    <p>Keep gutters clean, prevent leaks, and reuse water appropriately.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="cta">
+            <h2>Every drop counts.</h2>
+            <p>Start exploring your rainwater potential today.</p>
+            <a href="#calculator" class="cta-button">Try the Calculator →</a>
+        </section>
+    </main>
+
+    <footer>
+        <a href="#home" class="logo">Rain<span>Smart.</span></a>
+        <p>A student project for smarter rainwater management.</p>
+        <p class="copyright">© 2026 RainSmart · Learn. Calculate. Conserve.</p>
+    </footer>
+
+</body>
+</html>
+
+
+        <h3 id="result">Your result will appear here.</h3>
+    </div>
+</body>
+</html>
