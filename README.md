@@ -1,1 +1,1 @@
-# RainSmart-Intelligent-Rainwater-Management-System
+# RainSmart-Intelligent Rainwater System
